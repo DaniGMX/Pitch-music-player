@@ -1,13 +1,12 @@
-package com.danigmx.pitch.ui.auth
+package com.danigmx.pitch
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.danigmx.pitch.R
 
-class SignupActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_signup)
+        setContentView(R.layout.activity_main)
     }
 }
