@@ -8,4 +8,5 @@ I haven't introduced myself yet, right? My name is Daniel Gracia, and I'm curren
 ## Tech stack
 For now, this is what I got:
 - Kotlin: Front-end
+
 *I know it is poor for now, but I will update as soon as I get to use more tech!*
