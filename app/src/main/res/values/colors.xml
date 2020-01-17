@@ -3,4 +3,11 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    
+    <!-- Palette -->
+    <color name="p_onyx">#36413E</color>
+    <color name="p_red_purple">#DC0073</color>
+    <color name="p_purple">#820263</color>
+    <color name="p_tropical_violet">#CEB1DD</color>
+    <color name="p_white">#FFFFFF</color>
 </resources>

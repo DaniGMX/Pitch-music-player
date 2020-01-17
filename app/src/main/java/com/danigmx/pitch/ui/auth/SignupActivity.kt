@@ -2,6 +2,7 @@ package com.danigmx.pitch.ui.auth
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.danigmx.pitch.R
 
 class SignupActivity : AppCompatActivity() {
 
