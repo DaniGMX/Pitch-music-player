@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+
+    <!-- Palette -->
+    <color name="p_black">#000000</color>
+    <color name="p_jet">#333333</color>
+    <color name="p_amethyst">#9067C6</color>
+    <color name="p_dark_orchid">#7F2CCB</color>
+    <color name="p_orange_soda">#F85A3E</color>
+    <color name="p_anti_flash_white">#EAF2EF</color>
+    <color name="p_white">#FFFFFF</color>
+
+    <!-- Transparent palette -->
+    <color name="p_black_t">#77000000</color>
+    <color name="p_jet_t">#77333333</color>
+    <color name="p_amethyst_t">#779067C6</color>
+    <color name="p_dark_orchid_t">#777F2CCB</color>
+    <color name="p_orange_soda_t">#77F85A3E</color>
+    <color name="p_anti_flash_white_t">#77EAF2EF</color>
+    <color name="p_white_t">#77FFFFFF</color>
+
 </resources>
