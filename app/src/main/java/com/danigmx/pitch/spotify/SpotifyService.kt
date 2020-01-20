@@ -41,4 +41,8 @@ object SpotifyService {
 
         SpotifyAppRemote.connect(context, connectionParams, connectionListener)
     }
+
+    fun disconnect() {
+        SpotifyAppRemote.disconnect(spotifyAppRemote)
+    }
 }
