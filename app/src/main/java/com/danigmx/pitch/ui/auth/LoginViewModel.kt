@@ -8,5 +8,7 @@ import androidx.lifecycle.ViewModel
 
 class LoginViewModel() : ViewModel() {
 
-
+    fun connectToSpotifyButtonClicked() {
+        // TODO: implement this method in order to handle this onClick from layout
+    }
 }
