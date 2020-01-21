@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModelProviders
 import com.danigmx.pitch.App
 import com.danigmx.pitch.R
 import com.danigmx.pitch.databinding.ActivityLoginBinding
@@ -15,14 +16,18 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        // Databinding with the login layout
         val binding: ActivityLoginBinding = DataBindingUtil
             .setContentView(
                 this,
                 R.layout.activity_login
             )
 
-        binding.viewModel = LoginViewModel()
+        // Retrieve ViewModel
+        binding.viewModel = ViewModelProviders.of(this).get(LoginViewModel::class.java)
 
+        // Retrieve spotify connection button and add clickListener
+        // TODO: move connectToSpotify clickListener to the ViewModel
         binding.loginConnectButton.setOnClickListener {
             SpotifyService.connect(this) {
                 val intent = Intent(this, App::class.java)
@@ -30,4 +35,5 @@ class LoginActivity : AppCompatActivity() {
             }
         }
     }
+
 }

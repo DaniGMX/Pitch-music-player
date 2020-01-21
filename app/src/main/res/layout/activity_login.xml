@@ -57,7 +57,8 @@
             android:layout_marginRight="32dp"
             android:textAllCaps="false"
             android:text="@string/connect_to_spotify"
-            android:background="@drawable/button_signup_background"/>
+            android:background="@drawable/button_signup_background"
+            android:onClick="@{() -> viewModel.connectToSpotifyButtonClicked()}"/>
 
 
     </LinearLayout>

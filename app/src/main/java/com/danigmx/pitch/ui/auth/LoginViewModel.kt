@@ -3,11 +3,10 @@
  */
 package com.danigmx.pitch.ui.auth
 
-import android.widget.Toast
+import android.app.Application
 import androidx.lifecycle.ViewModel
 
-class LoginViewModel : ViewModel() {
-    fun connectButtonCLicked() {
-        
-    }
+class LoginViewModel() : ViewModel() {
+
+
 }
