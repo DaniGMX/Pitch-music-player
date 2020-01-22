@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import com.adamratzman.spotify.main.SpotifyAppAPI
 
 import com.danigmx.pitch.R
 import com.danigmx.pitch.databinding.HomeFragmentBinding
@@ -27,13 +26,9 @@ class HomeFragment : Fragment() {
             false
         )
 
-        val application = requireNotNull(this.activity).application
-
         val homeViewModel = ViewModelProviders.of(this).get(HomeViewModel::class.java)
 
         binding.homeViewModel = homeViewModel
-
-        val spotifyApi: SpotifyAppAPI
 
         return binding.root
     }

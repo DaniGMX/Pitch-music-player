@@ -12,22 +12,27 @@ import com.danigmx.pitch.App
 
 class LoginViewModel() : ViewModel() {
 
-    // Encapsulation of connection checking
+    /** Encapsulation of connection checking */
     private val _connect = MutableLiveData<Boolean>()
     val connect: LiveData<Boolean>
         get() = _connect
 
-    // Initialize connection chech to false
+    /** Initialize connection check to false */
     init {
         _connect.value = false
     }
 
-    // Set connect value on back thread to true
+    /** Set connect value on back thread to true to start connecting */
     fun connectWithSpotify() {
         _connect.postValue(true)
     }
 
-    // Make the Intent for the SpotifyService API
+    /** Reset connect value to false once we finished connecting */
+    fun finishedConnecting() {
+        _connect.postValue(false)
+    }
+
+    /** Make the Intent for the SpotifyService API */
     fun setIntent(ctx: Context): Intent {
         return Intent(ctx, App::class.java)
     }
