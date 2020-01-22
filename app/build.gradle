@@ -28,6 +28,17 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude("META-INF/*.kotlin_module")
+    }
 }
 
 dependencies {
@@ -52,10 +63,20 @@ dependencies {
     // Spotify
     implementation project(':spotify-app-remote-release-0.7.0')
 
+    // LastFM
+    implementation 'com.github.ag:lastfm-library:1.0.2'
+
     // Gson
     implementation "com.google.code.gson:gson:2.8.5"
 
     // Navigation
     implementation 'androidx.navigation:navigation-fragment-ktx:2.1.0'
     implementation 'androidx.navigation:navigation-ui-ktx:2.1.0'
+
+    // Volley API handling
+    implementation 'com.android.volley:volley:1.1.1'
+
+    // Spotify API by Adam Ratzman
+    implementation 'com.github.adamint:spotify-web-api-kotlin:2.1.2'
+
 }

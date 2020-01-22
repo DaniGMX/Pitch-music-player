@@ -2,4 +2,7 @@
     <string name="app_name">Pitch</string>
     <string name="connect_to_spotify">Connect to Spotify</string>
     <string name="this_will_be_pitch">This will be Pitch</string>
+
+    <string name="lfm_key">ef43590ae3c567779e7563dce435afa9</string>
+    <string name="lfm_secret">b11745a44a14613421d4a1c378c6f353</string>
 </resources>
