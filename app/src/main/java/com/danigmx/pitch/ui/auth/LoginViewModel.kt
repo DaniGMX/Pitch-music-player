@@ -19,7 +19,7 @@ class LoginViewModel() : ViewModel() {
 
     /** Initialize connection check to false */
     init {
-        _connect.value = false
+        _connect.value = true
     }
 
     /** Set connect value on back thread to true to start connecting */

@@ -5,18 +5,16 @@ package com.danigmx.pitch.spotify
 
 import android.content.Context
 import android.util.Log
+import com.danigmx.pitch.utils.SpotifyKeys
 import com.spotify.android.appremote.api.ConnectionParams
 import com.spotify.android.appremote.api.Connector
 import com.spotify.android.appremote.api.SpotifyAppRemote
 
 object SpotifyService {
 
-    private const val CLIENT_ID = "5b51a68f20a8439e818dafa2ac43d975"
-    private const val REDIRECT_URI = "com.danigmx.pitch://callback"
-
     private var spotifyAppRemote: SpotifyAppRemote? = null
-    private var connectionParams: ConnectionParams = ConnectionParams.Builder(CLIENT_ID)
-        .setRedirectUri(REDIRECT_URI)
+    private var connectionParams: ConnectionParams = ConnectionParams.Builder(SpotifyKeys.CLIENT_ID.key)
+        .setRedirectUri(SpotifyKeys.REDIRECT_URI.key)
         .showAuthView(true)
         .build()
 
