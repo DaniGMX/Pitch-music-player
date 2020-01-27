@@ -7,11 +7,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.recyclerview.widget.RecyclerView
 
 import com.danigmx.pitch.R
 import com.danigmx.pitch.databinding.HomeFragmentBinding
 
 class HomeFragment : Fragment() {
+
+    private lateinit var homeViewModel: HomeViewModel
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        // Retreive ViewModel
+        homeViewModel = ViewModelProviders.of(this).get(HomeViewModel::class.java)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
